@@ -1,0 +1,159 @@
+$medium-screen: 768px;
+
+//  typography
+// ----------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,700,600,300);
+
+body {
+    font-family: 'Gentium Book Basic', serif;
+    color: #3b3b3b;
+    font-size: em(17);
+}
+
+h1, h2, h3, h4, h5 {
+    color: desaturate(#43364D, 6%);
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 58px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    span {
+        font-family: 'Gentium Book Basic', serif;
+        font-style: italic;
+        text-transform: lowercase;
+        font-weight: 300;
+    }
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container {
+    @include outer-container;
+}
+
+// --------------------------------------------------------------------------
+//  HEader
+// --------------------------------------------------------------------------
+
+header {
+    padding: em(30) em(20);
+    position: fixed;
+    z-index: 999;
+    background-color: desaturate(#43364D, 6%);
+    //background-color: lighten(#4C311C, 28%); //#784B2F;
+    width: 100%;
+}
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+    @include outer-container;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        margin-right: em(40);
+        text-transform: uppercase;
+        // font-weight: bold;
+        font-size: em(14);
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #fff; //#784B2F;
+    }
+}
+
+// --------------------------------------------------------------------------
+//  The rest
+// --------------------------------------------------------------------------
+
+section {
+    h1 {
+        color: #fff;
+    }
+    .first-letter { float: left; color: #4B404F; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Gentium Book Basic', serif; }
+}
+
+.content-block {
+    padding: 40px 20px;
+    @include media($medium-screen) {
+        padding: 80px 20px;
+    }
+    background-color: #fff;
+}
+
+.bgPic {
+    background-attachment: fixed;
+    min-width: 100%;
+    min-height: 900px;
+    position: relative;
+}
+
+
+#section-one {
+    background: url(../img/1.jpg) center top no-repeat fixed;
+    background-size: cover;
+}
+
+#section-two {
+    background: url(../img/2.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+#section-three {
+    background: url(../img/3.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+#section-four {
+    background: url(../img/4.jpg) center top no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    padding: 80px;
+    .container {
+        max-width: 800px;
+    }
+    background-color: desaturate(#43364D, 6%);
+    min-height: 500px;
+    text-align: center;
+    p {
+        color: #7e6f8b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    img {
+        display: inline-block;
+        max-width: 100px;
+        background-color: #7e6f8b;
+    }
+}
+
+.single-column {
+    max-width: em(750);
+}
+
+// --------------------------------------------------------------------------
+//  grid
+// --------------------------------------------------------------------------
+
+@include media($medium-screen) {
+    .primary {
+        @include span-columns(6);
+    }
+    .secondary {
+        @include span-columns(6);
+    }
+}
