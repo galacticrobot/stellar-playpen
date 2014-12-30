@@ -6,7 +6,8 @@ All images and text borrowed from the internet. I can't really remember where I 
 
 ## Things used
 
-* Stellar.js [http://markdalgleish.com/projects/stellar.js/](http://markdalgleish.com/projects/stellar.js/)
-* Smooth-scroll [https://github.com/cferdinandi/smooth-scroll](https://github.com/cferdinandi/smooth-scroll)
+* Stellar.js: [http://markdalgleish.com/projects/stellar.js/](http://markdalgleish.com/projects/stellar.js/)
+* Smooth-scroll: [https://github.com/cferdinandi/smooth-scroll](https://github.com/cferdinandi/smooth-scroll)
 * Html5 boilerplate: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
 * Bourbon & Bourbon neat: [http://bourbon.io](http://bourbon.io)
+* Codekit: [https://incident57.com/codekit/](https://incident57.com/codekit/)
