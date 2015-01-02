@@ -218,6 +218,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/couple.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17958,
+		"inputAbbreviatedPath": "\/img\/couple.jpg",
+		"outputAbbreviatedPath": "\/img\/couple.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/surfer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

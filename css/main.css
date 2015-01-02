@@ -704,7 +704,9 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 58px;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%; }
   h1 span {
     font-family: 'Gentium Book Basic', serif;
     font-style: italic;
